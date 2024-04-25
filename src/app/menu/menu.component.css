@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #4056a1;
+    --secondary: #efe2ba;
+    --success: #d79922;
+    --danger: #f13c20;
+    --light: #c5cbe3;
+    --dark: #333;
+}
+
+
+a {
+    text-decoration: none;
+    color: var(--dark);
+
+}
+
+
+.areaesquerda {
+    width: 18vw;
+    background-color: white;
+    height: 100vh;
+    padding: 1.5rem;
+}
+
+.areaesquerda .logo img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.menu p {
+    margin-bottom: 1rem;
+}
+
+.menu img {
+    width: 20px;
+    display: inline-block;
+    margin-right: 1rem;
+    vertical-align: middle;
+}
+
+.menu a {
+    font-size: 20px;
+    vertical-align: middle;
+}
+
+/* 1. Configurações CSS para telas de até 1280px de largura*/
+@media only screen and (max-width: 1280px) {
+    .areaesquerda {
+        /* 2. Posicionamento estático */
+        position: static;
+        /* 3. Largura de 80% da largura área de visualização */
+        width: 100%;
+        /* 4. Altura automática */
+        height: auto;
+    }
+
+    .areaesquerda .brand {
+        /* 5. Contêiner flexbox */
+        display: flex;
+        /* 6. Espaço de 1rem entre itens flexbox */
+        gap: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .areaesquerda .menu {
+        /* 7. Contêiner flexbox */
+        display: flex;
+        /* 8. Espaço de 3vw entre itens flexbox */
+        gap: 3vw;
+
+
+
+    }
+
+    .areaesquerda .menu img {
+        /* 9. Largura de 2.5% da largura área de visualização */
+        width: 2, 5%;
+        /* 10. Margem direita de 0.6% da largura área de visualização */
+        padding-right: 0.6%;
+
+    }
+
+    .areaesquerda .menu a {
+        /* 11. Tamanho de fonte de 2.5% da largura área de visualização */
+        font-size: 2, 5%;
+    }
+
+    .areaesquerda h2 {
+        /* 12. Alinhamento vertical superior */
+        vertical-align: middle;
+        /* 13. Margens zeradas (forçar) */
+        margin: 0 auto !important;
+        font-size: 6vw;
+    }
+
+    .areaesquerda .logo {
+        width: 20vw;
+        border-radius: 10px;
+    }
+}
+
+
+.my3 {
+    margin-top: 1.5rem !important;
+    margin-bottom: 1.5rem !important;
+}
